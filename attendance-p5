@@ -1,19 +1,20 @@
-# (1) Clone repo ที่คุณสร้างไว้
-git clone https://github.com/ชื่อผู้ใช้ของคุณ/ชื่อรีโป.git
-
-# เช่น:
-# git clone https://github.com/yourusername/student-attendance-p5
-
-# (2) เข้าไปในโฟลเดอร์
-cd student-attendance-p5
-
-# (3) คัดลอกไฟล์จากโฟลเดอร์ที่โหลดไว้ (หรือ export จาก Canvas) ลงในนี้
-
-# (4) เพิ่มไฟล์ทั้งหมด
-git add .
-
-# (5) commit ไฟล์
+git clone https://github.com/yourusername/student-attendance-p5
+git add .{
+  "name": "student-attendance-system-p5",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "date-fns": "^2.30.0",
+    "uuid": "^9.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  }
+}
 git commit -m "Initial commit ระบบเช็คชื่อนักเรียน ป.5"
-
-# (6) push ขึ้น GitHub
-git push origin main
